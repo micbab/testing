@@ -1,0 +1,84 @@
+body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    margin: 25px;
+  }
+  
+  .cover img {
+    box-sizing: border-box;
+    float: left;
+    height: auto;
+    margin-right: 25px;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    width: 300px;
+  }
+  
+  .cover img:hover {
+    opacity: 0.8;
+  }
+  
+  .description p::first-letter {
+    font-size: 2em; /* The font size will be twice the size of the current font size */
+  }
+  
+  .description {
+    font-size: 1rem; /* 1rem is equivalent to the root font size. By default, most browsers set the root font size to 16px. */
+    text-align: justify;
+  }
+  
+  .track-listing {
+    text-align: justify;
+  }
+  
+  h5 {
+    color: blue;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  @media (max-width: 2560px) {
+    /* 4K devices */
+    body {
+      padding-left: 600px;
+      padding-right: 600px;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    /* 2K devices */
+    body {
+      padding-left: 300px;
+      padding-right: 300px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    /* Tablets */
+    body {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Tablets and large smartphones */
+    body {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Small smartphones */
+    body {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
