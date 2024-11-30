@@ -5,21 +5,25 @@ body {
 }
 
 .cover img {
+  box-sizing: border-box;
   float: left;
-  height: 300px;
+  height: auto;
   margin-right: 25px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  width: 300px;
 }
 
 .cover img:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .description p::first-letter {
-  font-size: 2em;
+  font-size: 2em; /* The font size will be twice the size of the current font size */
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 1rem; /* 1rem is equivalent to the root font size. By default, most browsers set the root font size to 16px. */
   text-align: justify;
 }
 
@@ -40,7 +44,7 @@ footer p {
 }
 
 @media (max-width: 2560px) {
-  /* 4K devices*/
+  /* 4K devices */
   body {
     padding-left: 600px;
     padding-right: 600px;
@@ -48,7 +52,7 @@ footer p {
 }
 
 @media (max-width: 1440px) {
-  /* 2K devices*/
+  /* 2K devices */
   body {
     padding-left: 300px;
     padding-right: 300px;
