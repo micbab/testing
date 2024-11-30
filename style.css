@@ -2,8 +2,6 @@ body {
   background-color: #ffffff;
   font-family: sans-serif;
   margin: 25px;
-  padding-left: 500px;
-  padding-right: 500px;
 }
 
 .cover img {
@@ -16,7 +14,7 @@ body {
   opacity: 0.8;
 }
 
-p::first-letter {
+.description p::first-letter {
   font-size: 2em;
 }
 
@@ -37,11 +35,15 @@ li {
   cursor: pointer;
 }
 
+footer p {
+  text-align: center;
+}
+
 @media (max-width: 2560px) {
   /* 4K devices*/
   body {
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 600px;
+    padding-right: 600px;
   }
 }
 
