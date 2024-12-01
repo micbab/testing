@@ -1,10 +1,41 @@
 body {
-    background-color: #ffffff;
-    font-family: sans-serif;
-    margin: 25px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  margin: 25px;
+
+  @media (max-width: 2560px) {
+    // For 4K devices
+    padding-left: 600px;
+    padding-right: 600px;
   }
-  
-  .cover img {
+
+  @media (max-width: 1440px) {
+    // For 2K devices
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  @media (max-width: 1024px) {
+    // For tablets
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  @media (max-width: 768px) {
+    // For tablets and large smartphones
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: 480px) {
+    // For small smartphones
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.cover {
+  img {
     box-sizing: border-box;
     float: left;
     height: auto;
@@ -12,73 +43,36 @@ body {
     transition: opacity 0.3s ease;
     opacity: 1;
     width: 300px;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
-  
-  .cover img:hover {
-    opacity: 0.8;
+}
+
+.description {
+  font-size: 1rem; // 1rem is equivalent to the root font size. By default, most browsers set the root font size to 16px.
+  text-align: justify;
+
+  p::first-letter {
+    font-size: 2em; // Sets the first letter's font size to twice the size of the current font size.
   }
-  
-  .description p::first-letter {
-    font-size: 2em; /* The font size will be twice the size of the current font size */
-  }
-  
-  .description {
-    font-size: 1rem; /* 1rem is equivalent to the root font size. By default, most browsers set the root font size to 16px. */
-    text-align: justify;
-  }
-  
-  .track-listing {
-    text-align: justify;
-  }
-  
-  h5 {
-    color: blue;
-  }
-  
-  li {
-    cursor: pointer;
-  }
-  
-  footer p {
+}
+
+.track-listing {
+  text-align: justify;
+}
+
+h5 {
+  color: blue;
+}
+
+li {
+  cursor: pointer;
+}
+
+footer {
+  p {
     text-align: center;
   }
-  
-  @media (max-width: 2560px) {
-    /* 4K devices */
-    body {
-      padding-left: 600px;
-      padding-right: 600px;
-    }
-  }
-  
-  @media (max-width: 1440px) {
-    /* 2K devices */
-    body {
-      padding-left: 300px;
-      padding-right: 300px;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    /* Tablets */
-    body {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    /* Tablets and large smartphones */
-    body {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    /* Small smartphones */
-    body {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
+}
